@@ -1,0 +1,7 @@
+<p *ngIf="student">
+  Student: <a href="#" (click)="clicked()">{{student.name}}</a>
+  <small *ngIf="student?.isJedi">
+    Jedi Temple: {{student?.temple}}
+  </small>
+</p>
+<p *ngIf="!student">Sem dados para exibir</p>
